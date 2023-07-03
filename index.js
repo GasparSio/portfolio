@@ -11,24 +11,34 @@ container.addEventListener('wheel', (event) => {
 });
 
 
-window.addEventListener('scroll', function() {
-  const sections = document.querySelectorAll('section');
-  const navLinks = document.querySelectorAll('nav ul li a');
-  let currentSection = '';
 
-  sections.forEach(function(section) {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
+// Obtener los elementos de los enlaces del menú
+const navLinks = document.querySelectorAll('nav ul li a');
 
-      if (pageYOffset >= sectionTop - sectionHeight / 3) {
-          currentSection = section.getAttribute('id');
-      }
+// Obtener las secciones
+const sections = document.querySelectorAll('section');
+
+// Función para cambiar el color del enlace activo
+function changeActiveLink() {
+  // Obtener la posición actual de desplazamiento
+  const scrollPosition = window.pageYOffset;
+
+  // Recorrer todas las secciones
+  sections.forEach((section, index) => {
+    // Obtener la posición superior e inferior de la sección
+    const sectionTop = section.offsetTop;
+    const sectionBottom = sectionTop + section.offsetHeight;
+
+    // Verificar si la posición actual de desplazamiento está dentro de la sección
+    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      // Agregar la clase activa al enlace correspondiente
+      navLinks.forEach((link) => {
+        link.classList.remove('active');
+      });
+      navLinks[index].classList.add('active');
+    }
   });
+}
 
-  navLinks.forEach(function(navLink) {
-      navLink.classList.remove('active');
-      if (navLink.getAttribute('href').substring(1) === currentSection) {
-          navLink.classList.add('active');
-      }
-  });
-});
+// Evento de desplazamiento
+window.addEventListener('scroll', changeActiveLink);
