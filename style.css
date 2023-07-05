@@ -50,7 +50,7 @@ nav ul li a {
   font-weight: 400;
   font-family: 'Spectral', serif;
 }
-nav ul li a.active {
+.active {
   color: #ad5b17;
 }
 /* CONTAINER */
@@ -90,6 +90,10 @@ section{
   font-size: 18px;
   font-weight: 600;
   font-family: 'Spectral', serif;
+  transition-property: scale;
+}
+.section1__links a:hover{
+  scale: 1.05;
 }
 .section1__content{
   width: 50%;
@@ -167,6 +171,10 @@ section{
   font-size: 16px;
   width: 120px;
   font-family: 'Spectral', serif;
+  transition-property: scale;
+}
+.down-cv:hover{
+  scale: 1.05;
 }
 
 /* SECTION 3 */
@@ -211,6 +219,14 @@ section{
   width: 95%;
   border-radius: 7px;
 }
+.img-oxy:hover{
+  animation: animate__headShake;
+  animation-duration: 2s; 
+}
+.img-mypho:hover{
+  animation: animate__headShake;
+  animation-duration: 2s; 
+}
 
 /* SECTION 4 */
 .section4-container{
@@ -232,11 +248,14 @@ section{
   margin-bottom: 10px;
   font-family: 'Gloock', serif;
 }
-.section4__content a{
+.write-email{
   color: #ad5b17;
   font-size: 20px;
   margin-bottom: 10px;
   font-family: 'Spectral', serif;
+}
+.write-email:hover{
+  scale: 1.01;
 }
 .section4__content p{
   color: #9e9e9e;
@@ -304,7 +323,7 @@ section{
   .section2__content{
     width: 100%;
     margin-left: 4%;
-    height: 44%;
+    height: 58%;
   }
   .section2__content h1{
     font-size: 30px;
