@@ -59,6 +59,7 @@ nav ul li a {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  overflow-x: hidden;
 }
 section{
   width: 100%;
@@ -187,8 +188,8 @@ section{
   justify-content: end;
 }
 .section3__content{
-  width: 50%;
-  height: 65%;
+  width: 57%;
+  height: 92%;
   display: flex;
   flex-direction: column;
 }
@@ -197,6 +198,7 @@ section{
   font-size: 50px;
   margin-bottom: 10px;
   font-family: 'Gloock', serif;
+  margin: auto;
 }
 .section3-line{
   background-color: #ad5b17;
@@ -204,10 +206,11 @@ section{
   border-radius: 15px;
   width: 30%;
   margin-bottom: 20px;
+  margin: auto;
 }
 
-
 .swiper {
+  display: none;
   width: 350px;
   margin: 0;
 }
@@ -225,8 +228,55 @@ section{
   --swiper-navigation-sides-offset: 10px;
   --swiper-navigation-color: #ad5b17;
 }
-
-
+.works-desktop{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+.works-desktop a img{
+  max-width: 230px;
+  border-radius: 8px;
+}
+.works-desktop-container-1{
+  display: flex;
+  justify-content: space-evenly;
+}
+.works-desktop-container-2{
+  display: flex;
+  justify-content: space-evenly;
+}
+.desktop-card-1,
+.desktop-card-2,
+.desktop-card-3,
+.desktop-card-4{
+  display: flex;
+  min-width: 230px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.desktop-card-1 span,
+.desktop-card-2 span,
+.desktop-card-3 span,
+.desktop-card-4 span{
+  color: #9e9e9e;
+  font-size: 17px;
+  margin-bottom: 4px;
+  font-family: 'Spectral', serif;
+  max-width: 230px;
+  letter-spacing: -1px;
+}
+.desktop-card-1 p,
+.desktop-card-2 p,
+.desktop-card-3 p,
+.desktop-card-4 p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 4px;
+  font-family: 'Spectral', serif;
+}
 /* SECTION 4 */
 .section4-container{
   width: 100%;
@@ -262,6 +312,7 @@ section{
   margin-bottom: 4px;
   font-family: 'Spectral', serif;
 }
+
 @media (max-width:768px){
   /* NAV LINK */
   nav {
@@ -350,8 +401,12 @@ section{
     font-size: 30px;
   }
   .swiper {
+    display: block;
     width: 300px;
     margin: 0;
+  }
+  .works-desktop{
+    display: none;
   }
 
   /* SECTION 4 */
