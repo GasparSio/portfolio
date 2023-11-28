@@ -273,19 +273,22 @@ section{
 }
 .desktop-card-2{
   outline: 2px solid var(--color-primary-green);
-  background: center / cover linear-gradient(298deg, #a3770f94 4%, #68531552 24%, #ffffff00 49%), url('../Portfolio/dashboard-miranda.jpg') no-repeat;
+  background: center / cover linear-gradient(298deg, #a3770f94 4%, #68531552 24%, #ffffff00 49%) no-repeat;
+  background-image: url(./img/dashboard-miranda.jpg);
   background-position: 50% 50%;
   background-size: 132%;
 }
 .desktop-card-3{
   outline: 2px solid var(--color-primary-green);
-  background: center / cover linear-gradient(298deg, #a3770f94 4%, #68531552 24%, #ffffff00 49%), url('../Portfolio/myPhotos.jpg') no-repeat;
+  background: center / cover linear-gradient(298deg, #a3770f94 4%, #68531552 24%, #ffffff00 49%) no-repeat;
+  background-image: url(./img/myPhotos.jpg);
   background-position: 50% 50%;
   background-size: 132%;
 }
 .desktop-card-4{
   outline: 2px solid var(--color-primary-green);
-  background: center / cover linear-gradient(298deg, #a3770f94 4%, #68531552 24%, #ffffff00 49%), url('../Portfolio/oxygenShop.jpg') no-repeat;
+  background: center / cover linear-gradient(298deg, #a3770f94 4%, #68531552 24%, #ffffff00 49%) no-repeat;
+  background-image: url(./img/oxygenShop.jpg);
   background-position: 50% 50%;
   background-size: 132%;
 }
