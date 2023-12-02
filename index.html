@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
@@ -30,7 +32,7 @@
           <a href="https://github.com/GasparSio" target="_blank">Github</a>
         </div>
         <div class="section1__content">
-          <h1>I am a Fullstack Developer</h1>
+          <h1>I'm a Fullstack Developer</h1>
           <div class="section1-line"></div>
           <p class="contact">Contact me</p>
           <p class="email">sio.gaspar@gmail.com</p>
@@ -47,7 +49,7 @@
       </section>
       <section class="section-container section3-container" id="Works">
         <div class="section3__content">
-          <h1>Latest works</h1>
+          <h1 class="section3__content-title">Latest works</h1>
           <div class="section3-line"></div>
           <div class="swiper">
             <div class="swiper-wrapper">
@@ -70,26 +72,48 @@
           <div class="works-desktop">
             <div class="works-desktop-container-1">
               <a href="https://tinyurl.com/hotel-miranda-php" target="_blank" class="desktop-card-1">
-                    <p class="texto">Miranda Hotel</p>
-                    <span>Technologies:</span>
-                    <span>HTML - SASS.</span>
+                    <div class="cards-text">
+                      <h1 class="texto">Miranda Hotel</h1>
+                      <p>HTML | CSS</p>
+                    </div>
+                    <div class="cards-img">
+                      <i class="fa-brands fa-html5 fa-2xl icons" style="color: #ff5722;"></i>
+                      <i class="fa-brands fa-sass fa-2xl" style="color: #ce679a;"></i>
+                    </div>
               </a>
               <a href="http://gasparsio-dashboard-miranda.s3-website.eu-west-3.amazonaws.com/" target="_blank" class="desktop-card-2">
-                <p>Dashboard Miranda</p>
-                <span>Technologies:</span>
-                <span>REACT - TYPESCRIPT - NODEJS - EXPRESS - MONGODB</span>
+                <div class="cards-text">
+                  <h1 class="texto">Dashboard Miranda</h1>
+                  <p>REACT | TS | NODE | MONGO | </p>
+                </div>
+                <div class="cards-img">
+                  <i class="fa-brands fa-react fa-2xl" style="color: #00d8ff;"></i>
+                  <i class="fa-brands fa-node fa-2xl" style="color: #72aa61;"></i>
+                  <img src="./img/ts.png" alt="typescript image" class="img-ts">
+                  <img src="./img/mongo.png" alt="typescript image" class="img-mongo">
+                </div>
               </a>
             </div>
             <div class="works-desktop-container-2">
               <a href="https://my-photos-app.vercel.app/" target="_blank" class="desktop-card-3">
-                <p>MyPhotos App</p>
-                <span>Technologies:</span>
-                <span>REACT - CSS.</span>
+                <div class="cards-text">
+                  <h1 class="texto">MyPhotos App</h1>
+                  <p>REACT | CSS </p>
+                </div>
+                <div class="cards-img">
+                  <i class="fa-brands fa-react fa-2xl" style="color: #00d8ff;"></i>
+                  <i class="fa-brands fa-css3-alt fa-2xl icons" style="color: #004ce8;"></i>
+                </div>
               </a>
               <a href="https://gasparsio.github.io/OxygenShop/" target="_blank" class="desktop-card-4">
-                <p>OxygenShop</p>
-                <span>Technologies:</span>
-                <span>JAVASCRIPT - CSS.</span>
+                <div class="cards-text">
+                  <h1 class="texto">OxygenShop</h1>
+                  <p>JAVASCRIPT | CSS </p>
+                </div>
+                <div class="cards-img">
+                  <i class="fa-brands fa-js fa-2xl" style="color: #ffca28;"></i>
+                  <i class="fa-brands fa-css3-alt fa-2xl icons" style="color: #004ce8;"></i>
+                </div>
               </a>
             </div>
           </div>
