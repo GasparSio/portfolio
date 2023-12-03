@@ -338,6 +338,9 @@ section{
   align-items: center;
   width: 100%;
 }
+.desktop-card-1:hover .cards-img .img-php {
+  width: 50px;
+}
 .desktop-card-2:hover .cards-img .img-ts{
   width: 50px;
 }
